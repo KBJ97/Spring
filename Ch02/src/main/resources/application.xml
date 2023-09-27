@@ -8,13 +8,10 @@
         https://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- 스프링 컨테이너 객체 탐색 -->
-    <context:component-scan base-package="sub1"/>
+    <context:component-scan base-package="sub2"/>
+    
+    <bean id="lg" class="sub1.LgTV"></bean>
+    <bean id="samsung" class="sub1.SamsungTV"></bean>
+    <bean id="spk" class="sub1.Speaker"></bean>
 
-	<bean id="lg" class="sub1.LgTV"></bean>
-	<bean id="samsung" class="sub1.SamsungTV"></bean>
-	<bean id="speaekr" class="sub1.Speaker"></bean>
-
-	<bean id="com" class="sub2.Computer"></bean>
-	<bean id="cpu" class="sub2.CPU"></bean>
-	<bean id="hdd" class="sub2.HDD"></bean>
 </beans>
